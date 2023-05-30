@@ -2,7 +2,7 @@
 Proyecto realizado en java con interfaz grafica y conexión a base de datos 
 # Crud Inmueble
 #### Descripción del repositorio
-- Es un proyecto realizado en el taller de programación java, dicho repositorio tiene como finalidad mostrar los temas trabajados en el laboratorio de programacion.Este es un proyecto ** Open Source** por lo que puedes modificar y adaptar según lo necesites. 
+- Es un proyecto realizado en el taller de programación java, dicho repositorio tiene como finalidad mostrar los temas trabajados en el laboratorio de programacion.Este es un proyecto **Open Source** por lo que puedes modificar y adaptar según lo necesites. 
 
 ----
 #### ***A continuación se muestran capturas del CRUD Inmueble:*** 
@@ -46,5 +46,5 @@ Proyecto realizado en java con interfaz grafica y conexión a base de datos
   * Util
   * ArrayList
   * SQL
- * JAR
- * MYSQL JDBC
+  * JAR
+  * MYSQL JDBC
