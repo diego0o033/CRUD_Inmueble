@@ -42,9 +42,9 @@ Proyecto realizado en java con interfaz grafica y conexión a base de datos
 * Java SE
 * Mysql Workbench :  [Ver repositorio: Script CRUD](https://github.com/diego0o033/Script-Crud_Inmueble)
 * Librerias Java:
- * Swing
- * Util
- * ArrayList
- * SQL
-* JAR
+  * Swing
+  * Util
+  * ArrayList
+  * SQL
+ * JAR
  * MYSQL JDBC
