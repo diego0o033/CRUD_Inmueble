@@ -1,50 +1,84 @@
-# CRUD_Inmueble
-Proyecto realizado en java con interfaz grafica y conexión a base de datos 
-# Crud Inmueble
-#### Descripción del repositorio
-- Es un proyecto realizado en el taller de programación java, dicho repositorio tiene como finalidad mostrar los temas trabajados en el laboratorio de programacion.Este es un proyecto **Open Source** por lo que puedes modificar y adaptar según lo necesites. 
+# CRUD_Inmueble 🏠  
+## **Proyecto realizado en java con interfaz grafica y conexión a base de datos.**
 
-----
-#### ***A continuación se muestran capturas del CRUD Inmueble:*** 
-----
-
-
-!["Imagen principal"](https://i.postimg.cc/nrgc77gN/img-princ-3.png)
-
-!["Busqueda x filtro"](https://i.postimg.cc/T24PZM1Q/img-filtro-busq-2.png)
-
-!["Insertar registro en bd"](https://i.postimg.cc/HLdWQTvW/img-insertar-Datos.png)
-
-!["Actualizar datos"](https://i.postimg.cc/CxjLBRN6/img-modificar-Datos-2.png)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white) 
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
 ---
-#### Breve descripción sobre el funcionamiento del CRUD:
 
-- A través del JDBC se conecta a la base de datos Mysql(utilizando mysql connector vers. 8.0.28)
+## Descripción del repositorio 📋 
+Proyecto realizado en el taller de programación Java para practicar los conceptos trabajados en el laboratorio. Este CRUD permite gestionar inmuebles con funcionalidades de búsqueda, inserción, modificación y validaciones integradas.  
 
-- Se utiliza un archivo properties, para la configuracion de la base de datos, de esta forma evitamos hardcodear el codigo de la clase conexion(Conex_Bd), solo modificamos los valores en el archivo properties y ya nos conectamos a nuestra base de datos.
+Es un proyecto **Open Source**, lo que significa que puedes modificar y adaptarlo según tus necesidades.
 
-- Permite realizar diversas búsquedas, de acuerdo a la selección que se realice en el filtro de búsqueda.
+---
 
-- A la hora de insertar registros a la base de datos, válida que los campos del formulario se encuentren con valores, de lo contrario, nos avisa que completemos los campos  antes de insertar los datos. También válida que el código de inmueble  no se repita, de esta forma cada registro de un inmueble en nuestra base de datos, es único.
+## Capturas de Pantalla 📸  
 
-- Al querer modificar un registro, no es necesario cargar los datos en el formulario manualmente, se selecciona una fila de la tabla y automáticamente se completan los valores en los campos del formulario.
+### Pantalla Principal  
+**Visualización inicial, conexión a la base de datos y carga de datos:**  
+ 
+ <div style= "display: flex; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/e705a015-05d3-4f92-9006-7daca19ed682" alt= "imagen_principal" width="48%">
+  <img src="https://github.com/user-attachments/assets/0fce5d03-3464-4ba8-a896-1f8273413056" alt= "estableciendo_conexion_bd" width="48%">
+  <img src="https://github.com/user-attachments/assets/db2ae50b-5c3f-49be-bd1d-1ffcf86603a3" alt= "carga_registros" width="96.5%">
 
-- Se utiliza una única conexión para todas las transacciones que se deben realizar en el CRUD, a través de la utilización del patrón de diseño Singleton.
-# Caracteristicas:
-- Uso de Patrón MVC
-- Uso de Patrón DAO
-- Uso de Patrón DTO
-- Uso de Patrón SINGLETON
-- Conexión a base de datos Mysql Workbench
+ </div>
+ 
+ #### Insertar y modificar datos:
 
-# Herramientas:
-* Java SE
-* Mysql Workbench :  [Ver repositorio: Script CRUD](https://github.com/diego0o033/Script-Crud_Inmueble)
-* Librerias Java:
-  * Swing
-  * Util
-  * ArrayList
-  * SQL
-  * JAR
-  * MYSQL JDBC
+<div style= "display: flex; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/981f1607-04c4-4965-855b-4c22e40e7632" alt= "insertar_datos_form_crud" width="48%">
+  <img src="https://github.com/user-attachments/assets/3b2b104f-a7cf-483a-857c-0479c61073a4" alt= "modificar_datos_registro" width="48%">
+  <img src="https://github.com/user-attachments/assets/73eb9675-1e18-41cf-ab8c-193d176e617a" alt= "modificacion_realizada" width="96.5%">
+
+</div>
+
+
+### Filtro de Búsqueda  
+**Filtra registros por diferentes criterios como localidad o código de propiedad:**
+<div style=" display: flex; justify-content: space-around">
+  <img src="https://github.com/user-attachments/assets/5983b6b6-788c-4245-bf09-3316e5c2710a" alt="filtro_localidad" width:"48%">
+  <img src="https://github.com/user-attachments/assets/f4bbc8c0-57c4-4d00-9834-428bb219ee23" alt="filtro_codigo_propiedad" width:"48%">
+
+</div>
+
+---
+
+## Funcionalidades ⚙️  
+
+- **Conexión a MySQL**: Implementada mediante JDBC y un archivo `.properties` para evitar hardcoding.  
+- **Búsquedas avanzadas**: Permite filtrar inmuebles por diversos criterios.  
+- **Validaciones integradas**:  
+  - Verifica campos vacíos antes de insertar datos.  
+  - Evita la duplicación del código de inmuebles.  
+- **Modificación fácil**: Al seleccionar un registro, los datos se completan automáticamente en el formulario.  
+- **Patrón Singleton**: Utiliza una única conexión para todas las operaciones del CRUD.  
+
+
+## Características del Proyecto 🛠️  
+
+- **Patrones de diseño**:  
+  - MVC  
+  - DAO  
+  - DTO  
+  - Singleton  
+- **Conexión con MySQL Workbench**: Compatible con la versión 8.0.28 del conector.  
+
+---
+
+## Herramientas Utilizadas 🛠️  
+
+| Herramienta         | Descripción                                      |  
+|----------------------|--------------------------------------------------|  
+| **Java SE**          | Para el desarrollo de la aplicación.            |  
+| **MySQL Workbench**  | Gestión de la base de datos. [Script CRUD](https://github.com/diego0o033/Script-Crud_Inmueble) |  
+| **Librerías**        | Swing, ArrayList, SQL, MySQL JDBC, entre otras. |  
+
+---
+
+## Instalación 🚀  
+
+1. Clona este repositorio:  
+   ```bash
+   git clone https://github.com/tu_usuario/CRUD_Inmueble.git
